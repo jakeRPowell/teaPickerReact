@@ -1,0 +1,79 @@
+button {
+  margin-bottom: 20px;
+}
+
+svg {
+  width: 48px;
+  height: 48px;
+  cursor: pointer;
+  transition: 0.3s;
+}
+
+.iconContainer {
+  position: relative;
+}
+
+.iconContainer span {
+  position: absolute;
+  top: calc(100% + 10px);
+  left: 50%;
+  transform: translateX(-50%);
+  opacity: 0;
+  transition: 0.5s;
+  pointer-events: none;
+  width: max-content;
+  font-size: 13px;
+}
+
+.iconContainer:hover span {
+  opacity: 1;
+}
+
+.headerButton {
+  cursor: pointer;
+  transition: 0.5s;
+  border: 2px solid #000;
+  border-radius: 50%;
+  height: 48px;
+  display: flex;
+  align-items: center;
+  margin-left: 8px;
+  position: relative;
+  z-index: 100;
+}
+
+.open > .headerButton {
+  transform: rotate(180deg);
+}
+
+.submitButton {
+  margin: 0 20px 0 auto;
+  padding: 8px 27px;
+}
+
+.pulse {
+  position: relative;
+}
+
+.pulse:before {
+  content: "";
+  position: absolute;
+  left: -1px;
+  top: -1px;
+  height: 100%;
+  width: 100%;
+  border: 1px solid #000;
+  border-radius: 50%;
+  animation: pulse 1.5s ease-out infinite;
+}
+
+@keyframes pulse {
+  from {
+    transform: scale(1);
+    opacity: 1;
+  }
+  to {
+    transform: scale(1.5);
+    opacity: 0;
+  }
+}

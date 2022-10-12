@@ -1,0 +1,64 @@
+{
+  "data": [
+    {
+      "id": 0,
+      "name": "Sarah",
+      "drink": "coffee",
+      "strength": 50,
+      "decaf": true,
+      "milk": "none",
+      "sugar": 0,
+      "wins": 0
+    },
+    {
+      "id": 1,
+      "name": "Isaac",
+      "drink": "tea",
+      "strength": 58,
+      "decaf": false,
+      "milk": "dairy",
+      "sugar": 1,
+      "wins": 0
+    },
+    {
+      "id": 2,
+      "name": "Charlie",
+      "drink": "tea",
+      "strength": 35,
+      "decaf": false,
+      "milk": "none",
+      "sugar": 0,
+      "wins": 0
+    },
+    {
+      "id": 3,
+      "name": "Jake",
+      "drink": "coffee",
+      "strength": 33,
+      "decaf": false,
+      "milk": "oat",
+      "sugar": 0,
+      "wins": 0
+    },
+    {
+      "id": 4,
+      "name": "Moki",
+      "drink": "Tea",
+      "strength": 23,
+      "decaf": false,
+      "milk": "dairy",
+      "sugar": 6,
+      "wins": 0
+    },
+    {
+      "id": 5,
+      "name": "Frogwell Chiz",
+      "drink": "coffee",
+      "strength": 10,
+      "decaf": true,
+      "milk": "soy",
+      "sugar": 0,
+      "wins": 0
+    }
+  ]
+}

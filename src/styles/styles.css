@@ -1,0 +1,155 @@
+body {
+}
+
+.App {
+  font-family: sans-serif;
+  text-align: left;
+  display: flex;
+  flex-direction: column;
+  position: relative;
+  margin: 0;
+  padding: 0;
+}
+
+.startMessage {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 20px;
+  cursor: pointer;
+}
+
+.controlsHeader {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.wheel .player {
+  list-style: none;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  width: 150px;
+  max-width: 50vw;
+  text-align: right;
+}
+
+.player > div {
+  transform-origin: left;
+}
+
+.stats .player {
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: 10px;
+  padding: 5px;
+}
+
+.stats .player:nth-child(odd) {
+  background: #eee;
+}
+
+.viewPanel {
+  position: absolute;
+  top: 0;
+  right: 0;
+  transform: translateX(-100%);
+  transition: 0.5s;
+  transition-timing-function: cubic-bezier(1, 0, 0.62, 1);
+  width: 100vw;
+  background: white;
+  z-index: 10;
+  padding: 100px 30px;
+  box-sizing: border-box;
+}
+
+.viewPanel.open {
+  transform: translateX(0);
+}
+
+.playerControlForm form {
+  max-height: 0;
+  overflow: hidden;
+  transition: max-height 0.5s cubic-bezier(0, 1, 0, 1);
+}
+
+.playerControlForm.open form {
+  max-height: 1000px;
+  transition: max-height 1s ease-in-out;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.formRow {
+  width: calc(100% - 40px);
+  display: grid;
+  grid-template-columns: 100px 100px;
+  justify-content: flex-end;
+  margin-bottom: 10px;
+}
+
+label {
+  text-align: left;
+}
+
+select {
+  width: 100%;
+}
+
+.strength {
+  position: relative;
+}
+
+.strengthIndicator {
+  margin: 20px;
+  height: 50px;
+  width: 50px;
+  border-radius: 50%;
+  grid-column-start: 2;
+}
+
+.fullInfo {
+  position: relative;
+}
+
+.fullInfo .strengthIndicator {
+  position: absolute;
+  top: 50%;
+  left: 150px;
+  transform: translateY(-50%);
+  margin: 0;
+}
+
+.playerControlButtons {
+  display: flex;
+  justify-content: flex-end;
+}
+
+.playerInfo div {
+  display: flex;
+  align-items: center;
+  text-align: left;
+  margin-bottom: 10px;
+}
+
+.playerInfo ul {
+  margin: 0 0 30px 30px;
+  text-align: left;
+  list-style-type: none;
+}
+
+.playerInfo li {
+  margin-bottom: 10px;
+}
+
+.playerInfo.open ul {
+  max-height: 1000px;
+  transition: max-height 1s ease-in-out;
+  margin-bottom: 10px;
+}
+
+.playerInfo.open .playerInfo li {
+  text-align: left;
+}
